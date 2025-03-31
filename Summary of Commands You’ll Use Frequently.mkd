@@ -1,20 +1,20 @@
-1. Work on saikat branch
+### 1. Work on saikat branch
 
 git checkout saikat
 
-2. Commit and push changes
+### 2. Commit and push changes
 
 git add .
 git commit -m "message"
 git push origin saikat
 
-3. Merge into main and push
+### 3. Merge into main and push
 
 git checkout main
 git merge saikat
 git push origin main
 
-4. Update fork with upstream changes
+### 4. Update fork with upstream changes
 
 git checkout main
 git fetch upstream
