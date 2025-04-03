@@ -143,3 +143,106 @@ Now your fork is up to date with the latest changes from the original repository
 ---
 
 This setup ensures that you **use the forked repo for your own purposes** while keeping it **independent from the main project**. 🚀
+
+
+---
+
+### **1. Work on Your Own Branch (`saikat`)**  
+You're already on the `saikat` branch. If not, switch to it:  
+
+```sh
+git checkout saikat
+```
+
+If you haven’t created it yet:
+
+```sh
+git checkout -b saikat
+```
+
+---
+
+### **2. Make Your Changes**  
+Modify the code for your needs, then commit:
+
+```sh
+git add .
+git commit -m "Your commit message"
+```
+
+Push it to your fork:
+
+```sh
+git push origin saikat
+```
+
+Now, your changes are saved in your fork under the `saikat` branch.
+
+---
+
+### **3. Merge `saikat` Into Your `main`**  
+Once you're satisfied with your work and want to push it to your fork’s `main` branch:
+
+```sh
+git checkout main
+git merge saikat
+git push origin main
+```
+
+Now your fork's `main` branch contains all changes.
+
+---
+
+### **4. Keep Your Fork Updated With the Original Repo**
+If the original repository (`CodeWithHarry/100-days-of-code-youtube`) gets updates, you can pull them into your fork to stay updated.
+
+```sh
+git checkout main
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+
+If you're working in `saikat`, first update `main`, then:
+
+```sh
+git checkout saikat
+git merge main
+```
+
+Now, your fork remains updated without contributing to the original repo.
+
+---
+---
+### **Summary of Commands You’ll Use Frequently**
+---
+
+
+1. **Work on `saikat` branch**  
+   ```sh
+   git checkout saikat
+   ```
+
+2. **Commit and push changes**  
+   ```sh
+   git add .
+   git commit -m "message"
+   git push origin saikat
+   ```
+
+3. **Merge into `main` and push**  
+   ```sh
+   git checkout main
+   git merge saikat
+   git push origin main
+   ```
+
+4. **Update fork with upstream changes**  
+   ```sh
+   git checkout main
+   git fetch upstream
+   git merge upstream/main
+   git push origin main
+   ```
+
+Let me know if you need further clarifications! 🚀
